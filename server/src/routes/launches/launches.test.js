@@ -4,6 +4,9 @@ const {
     mongoConnect,
     mongoDisconnect
 } = require('../../services/mongo');
+const {
+    loadPlanets
+} = require('../../models/planets.model')
 
 describe('Launches API', () => {
     beforeAll(async () => {
